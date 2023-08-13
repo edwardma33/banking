@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}Home - Banking{% endblock %}
+
+{% block content %}
+<div class="form-container">
+    <form action="/auth" method="post">
+        <label for="username">Username:</label>
+        <input type="text" placeholder="username" autocomplete="off" name="username">
+        <label for="password">Password:</label>
+        <input type="text" placeholder="password" autocomplete="off" name="password">
+        <button type="submit">Submit</button>
+    </form>
+</div>
+{% endblock %}
